@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Credential Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Decentralized Academic Credential Demo</p>
+      <h1>Selective transcript disclosure</h1>
+      <p>University signs a diploma credential. Student reveals one course. Verifier checks signature, Merkle proof, issuer authorization, and revocation.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. University Issue</h2>
+        <dl id="credential-details"></dl>
+      </article>
+
+      <article class="card">
+        <h2>2. Student Disclosure</h2>
+        <label for="course-select">Course to reveal</label>
+        <select id="course-select"></select>
+        <button id="disclose-button">Generate Merkle proof</button>
+        <pre id="presentation-output">No presentation yet.</pre>
+      </article>
+
+      <article class="card">
+        <h2>3. Verifier</h2>
+        <div class="actions">
+          <button id="verify-button" disabled>Verify presentation</button>
+          <button id="revoke-button">Revoke credential</button>
+        </div>
+        <div id="verification-result" class="result">Waiting for presentation.</div>
+      </article>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
