@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verifier</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="breadcrumb"><a href="/">Home</a> / Verifier</nav>
+
+  <header class="page-header">
+    <h1>Verifier</h1>
+  </header>
+
+  <main class="single-panel">
+    <label>Presentation JSON (paste from Student)
+      <textarea id="presentation-input" rows="8" placeholder='Paste presentation JSON here...'></textarea>
+    </label>
+
+    <button id="verify-button">Verify Presentation</button>
+
+    <div id="verification-result" class="result">Paste presentation and click Verify.</div>
+  </main>
+
+  <script src="/verifier.js"></script>
+</body>
+</html>

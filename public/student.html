@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student — Academic Credential System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="breadcrumb"><a href="/">Home</a> / Student</nav>
+
+  <header class="page-header">
+    <h1>Student</h1>
+    <p>Chọn một môn học để tiết lộ. Các môn khác hoàn toàn bị ẩn.</p>
+  </header>
+
+  <main class="single-panel">
+    <div class="status-bar" id="student-status">Waiting for credential...</div>
+
+    <label>Course to reveal
+      <select id="course-select" disabled></select>
+    </label>
+
+    <button id="disclose-button" disabled>Generate Merkle Proof</button>
+
+    <h3>Presentation (send to Verifier)</h3>
+    <pre id="presentation-output">No presentation yet.</pre>
+
+    <button class="secondary" id="copy-button" disabled>Copy Presentation JSON</button>
+  </main>
+
+  <script src="/student.js"></script>
+</body>
+</html>

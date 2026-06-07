@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>University — Academic Credential System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="breadcrumb"><a href="/">Home</a> / University</nav>
+
+  <header class="page-header">
+    <h1>University</h1>
+  </header>
+
+  <main class="single-panel">
+    <div class="status-bar" id="uni-status">Connecting...</div>
+
+    <label>Degree Field
+      <input id="degree-field" value="Computer Science">
+    </label>
+    <label>Graduation Year
+      <input id="grad-year" type="number" value="2026">
+    </label>
+
+    <h3>Transcript</h3>
+    <div id="transcript-rows"></div>
+    <button class="secondary" id="add-row-button">+ Add Course</button>
+
+    <div class="actions">
+      <button id="issue-button">Issue Credential</button>
+      <button id="revoke-button" disabled>Revoke Credential</button>
+    </div>
+
+    <pre id="issue-output">No credential issued yet.</pre>
+  </main>
+
+  <script src="/university.js"></script>
+</body>
+</html>

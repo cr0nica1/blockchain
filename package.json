@@ -5,6 +5,8 @@
   "scripts": {
     "test": "hardhat test",
     "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
     "demo": "ts-node src/demo-server.ts"
   },
   "dependencies": {

@@ -3,41 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Academic Credential Demo</title>
+  <title>Academic Credential System</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <p class="eyebrow">Decentralized Academic Credential Demo</p>
-      <h1>Selective transcript disclosure</h1>
-      <p>University signs a diploma credential. Student reveals one course. Verifier checks signature, Merkle proof, issuer authorization, and revocation.</p>
-    </header>
+  <div id="connection-error" class="banner hidden">Cannot connect to server. Make sure Hardhat node and deploy script have run.</div>
 
-    <section class="grid">
-      <article class="card">
-        <h2>1. University Issue</h2>
-        <dl id="credential-details"></dl>
-      </article>
+  <header class="hero">
+    <p class="eyebrow">Decentralized Academic Credential System</p>
+    <h1>Digital Diploma</h1>
+   
+  </header>
 
-      <article class="card">
-        <h2>2. Student Disclosure</h2>
-        <label for="course-select">Course to reveal</label>
-        <select id="course-select"></select>
-        <button id="disclose-button">Generate Merkle proof</button>
-        <pre id="presentation-output">No presentation yet.</pre>
-      </article>
-
-      <article class="card">
-        <h2>3. Verifier</h2>
-        <div class="actions">
-          <button id="verify-button" disabled>Verify presentation</button>
-          <button id="revoke-button">Revoke credential</button>
-        </div>
-        <div id="verification-result" class="result">Waiting for presentation.</div>
-      </article>
-    </section>
-  </main>
-  <script src="/app.js"></script>
+  <section class="role-grid">
+    <a href="/university.html" class="role-card">
+      <div class="role-icon">&#127891;</div>
+      <h2>University</h2>
+    </a>
+    <a href="/student.html" class="role-card">
+      <div class="role-icon">&#127891;</div>
+      <h2>Student</h2>
+    </a>
+    <a href="/verifier.html" class="role-card">
+      <div class="role-icon">&#128269;</div>
+      <h2>Verifier</h2>
+    </a>
+  </section>
 </body>
 </html>
