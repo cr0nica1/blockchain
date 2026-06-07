@@ -41,13 +41,6 @@ test/credential.test.ts             Contract, Merkle, crypto, e2e tests
 test/demo-server.test.ts            Unit tests for Merkle and crypto helpers
 ```
 
-## Run Tests
-
-```bash
-npm test
-```
-
-Expected: `14 passing`
 
 ## Run Web Demo
 
